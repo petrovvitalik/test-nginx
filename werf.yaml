@@ -1,0 +1,22 @@
+configVersion: 1
+project: test-nginx
+deploy:
+  helmChartDir: ./.helm
+  helmRelease: test-nginx
+  namespace: "test-nginx-[[ env ]]"
+  namespaceSlug: true
+cleanup:
+  disableKubernetesBasedPolicy: false
+  disableBuiltWithinLastNHoursPolicy: false
+  keepImagesBuiltWithinLastNHours: 48
+  keepPolicies:
+  - references:
+      branch: main
+      limit:
+        last: 10
+  - references:
+      branch: /!main
+      limit:
+        last: 5
+        in: 336h
+        operator: Or

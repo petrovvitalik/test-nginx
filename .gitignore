@@ -1,0 +1,10 @@
+.idea
+.env
+.docker-mount-data/postgres
+.werf_secret_key
+.werf-build-report.env
+render.yaml
+render.txt
+local_development
+Makefile
+README.md

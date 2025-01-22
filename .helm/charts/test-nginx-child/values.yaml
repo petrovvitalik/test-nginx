@@ -1,0 +1,13 @@
+nginx:
+  text: "" # exported from werf
+  nginxUserDeployments:
+    deployments:
+      - name: "deployment-1"
+        test:
+          text: "text1"
+      - name: "deployment-2"
+        test:
+          text: "not exported"
+      - name: "deployment-3"
+        test:
+          text: "default"

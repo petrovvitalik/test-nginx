@@ -1,0 +1,6 @@
+dependencies:
+- name: test-nginx-child
+  repository: ""
+  version: "1"
+digest: sha256:31b4288f34da686776bdfa053099dd77ca8a8358632fd5b4a5bbff44308acff0
+generated: "2025-01-22T15:53:21.060662881+01:00"

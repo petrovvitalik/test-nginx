@@ -1,0 +1,9 @@
+apiVersion: v2
+name: test-nginx
+version: 1.1
+dependencies:
+- name: test-nginx-child
+  version: 1.0
+  export-values:
+    - parent: werf.env
+      child: nginx.nginxUserDeployments.deployments[2].test.text
